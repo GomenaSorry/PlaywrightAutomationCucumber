@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 93706000
+              "duration": 182687799
             }
           },
           {
@@ -23,11 +23,11 @@
             "line": 6,
             "name": "I visit login page",
             "match": {
-              "location": "step-definitions\\login-step.js:3"
+              "location": "step-definitions\\login-step.js:6"
             },
             "result": {
               "status": "passed",
-              "duration": 188700200
+              "duration": 246377300
             }
           },
           {
@@ -36,11 +36,11 @@
             "line": 7,
             "name": "I fill the login form with valid credentials",
             "match": {
-              "location": "step-definitions\\login-step.js:7"
+              "location": "step-definitions\\login-step.js:10"
             },
             "result": {
               "status": "passed",
-              "duration": 137114300
+              "duration": 179849399
             }
           },
           {
@@ -49,11 +49,11 @@
             "line": 8,
             "name": "I should see the home page",
             "match": {
-              "location": "step-definitions\\login-step.js:13"
+              "location": "step-definitions\\login-step.js:18"
             },
             "result": {
               "status": "passed",
-              "duration": 9411500
+              "duration": 15392900
             }
           },
           {
@@ -61,7 +61,141 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 134833899
+              "duration": 49661299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-action;login-with-invalid-credentials",
+        "keyword": "Scenario Outline",
+        "line": 10,
+        "name": "Login with invalid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 123734899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I visit login page",
+            "match": {
+              "location": "step-definitions\\login-step.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 308061700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I fill the login form with \"fail-user1\" and \"secret_sauce\"",
+            "match": {
+              "location": "step-definitions\\login-step.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 130586000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "item should not be visible",
+            "match": {
+              "location": "step-definitions\\login-step.js:22"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1943299,
+              "error_message": "AssertionError: expected Locator@.error-message-container error to not exist\n    at LoginPage.waitForSpecificItem (C:\\Users\\ASUS\\source\\PlaywrightAutomationCucumber\\page-objects\\login-page.js:25:76)\n    at World.<anonymous> (C:\\Users\\ASUS\\source\\PlaywrightAutomationCucumber\\step-definitions\\login-step.js:23:21)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 26139900
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-action;login-with-invalid-credentials",
+        "keyword": "Scenario Outline",
+        "line": 10,
+        "name": "Login with invalid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 132853800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I visit login page",
+            "match": {
+              "location": "step-definitions\\login-step.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 235522799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I fill the login form with \"fail-user2\" and \"secret_sauce\"",
+            "match": {
+              "location": "step-definitions\\login-step.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 131321599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "item should not be visible",
+            "match": {
+              "location": "step-definitions\\login-step.js:22"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 592499,
+              "error_message": "AssertionError: expected Locator@.error-message-container error to not exist\n    at LoginPage.waitForSpecificItem (C:\\Users\\ASUS\\source\\PlaywrightAutomationCucumber\\page-objects\\login-page.js:25:76)\n    at World.<anonymous> (C:\\Users\\ASUS\\source\\PlaywrightAutomationCucumber\\step-definitions\\login-step.js:23:21)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 19827300
             }
           }
         ],
